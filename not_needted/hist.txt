@@ -1,0 +1,101 @@
+   665	11:02	gvim test.sv
+   666	11:04	gvim top.sv
+   667	11:08	gvim intf.sv
+   668	11:08	gvim dut.sv
+   669	11:10	gvim cov.sv
+   670	11:17	gvim ../ALU_Nitish/alu.f
+   671	11:17	gvim ../ALU_Nitish/alu_pkg.sv
+   672	11:18	gvim pkg.sv
+   673	11:20	gvim mem.f
+   688	11:34	vsim -vopt top -l alu.log -coverage -c -do "coverage save -directive -cvg cov.ucdb; run -all;quit;"
+   693	11:46	vlog -sv +cover +fcover -f mem.f
+   701	11:54	gvim ../XGE_MAC_PROJECT/tb/xge_mac_subscriber.svh
+   708	12:17	vlog -sv +cover +fcover -f top.sv
+   715	12:38	vlog -sv +cover +fcover top.sv
+   716	12:38	vsim -vopt dram_top -l dram.log -coverage -c -do "coverage save -directive -cvg cov.ucdb; run -all;quit;"
+   720	12:46	rm -rf work/* vish_stacktrace.vstf covhtmlreport/* cov.ucdb
+   722	12:46	rm -rf work/*
+   723	12:46	rm -rf work
+   727	12:49	vsim -vopt work.dram_top -voptargs=+acc=npr -l dram.log -coverage -c -do "coverage save -directive -cvg -codeAll cov.ucdb; run -all;quit;"
+   732	12:52	rm -rf covhtmlreport
+   738	13:01	history
+   739	13:01	history - > his.txt
+   757	14:20	gvi his.txt
+   758	14:20	gvim his.txt
+   759	14:25	vlog -sv +acc top.sv
+   760	14:26	vsim -vopt dram_top -voptargs=+acc=npr -l dram_top.log -c -do "add wave -r /*;  run -all;quit;" -wlf waveform.wlf
+   761	14:27	sim -view waveform.wlf &
+   765	14:29	gvim dram_top.log
+   767	14:35	gvim ../../packialakshmi/dpram_cov/tb/tr_db.log
+   768	14:35	gvim ../../packialakshmi/dpram_cov/tb/dram.log
+   769	14:36	gvim dram.log
+   775	14:55	gvim ../../packialakshmi/dpram_cov/tb/COV.sv
+   797	15:22	vlog -sv +acc +cover +fcover top.sv
+   798	15:22	vsim -vopt work.dram_top -voptargs=+acc=npr -l dram.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;"
+   802	15:55	gvim ../../piyush_b7/DPRAM/tb/coverage.sv
+   803	15:55	gvim ../../piyush_b7/DPRAM/tb/sequence.sv
+   805	15:56	rm -rf alu.log
+   807	15:56	rm -rf mem.f pkg.sv
+   809	15:57	rm -rf his.txt
+   813	15:59	gvim alu_pkg.sv
+   819	20:51	vsim -view waveform.wlf
+   820	20:57	gvim ../../johnshahid_B7/AXI_FIFO_BFM/src/verif/tb/top.sv
+   821	20:58	gvim ../../johnshahid_B7/AXI_FIFO_BFM/src/verif/tb/test/fifo_base_test.sv
+   892	1:16	gvim ../Dual_port_mem/cov.sv
+   897	1:21	gvim ../Dual_port_mem/env.sv
+   899	12:09	gvim sim/makefile
+   900	12:12	gvim ../XGE_MAC_PROJECT/sim/makefile
+   901	12:14	gvim alu.log
+   902	12:45	pwd
+   905	12:51	gvim ../Dual_port_mem/active_agent.sv
+   916	13:00	kill %1
+   918	13:01	lmstat -A
+   933	14:45	history - > ../his.txt
+   939	15:22	gvim ../his.txt
+   943	15:33	vsim -vopt work.top -voptargs=+acc=npr -l alu.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" test=alu_add_test
+   947	15:34	vsim -vopt work.top -voptargs=+acc=npr -l alu.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;"
+   977	16:35	vsim -vopt work.top -voptargs=+acc=npr -l alu_add_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" +UVM_TESTNAME=alu_sub_test
+   979	16:36	vsim -vopt work.top -voptargs=+acc=npr -l alu_add_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" +UVM_TESTNAME=alu_incr_dec_test
+   981	16:38	vsim -vopt work.top -voptargs=+acc=npr -l alu.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" +UVM_TESTNAME=alu_add_test
+   987	16:43	vsim -vopt work.top -voptargs=+acc=npr -l alu_incr_dec_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" +UVM_TESTNAME=alu_incr_dec_test
+  1004	17:24	gvim alu_comp_test.log
+  1017	17:57	vsim -vopt work.top -voptargs=+acc=npr -l alu_comp_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" +UVM_TESTNAME=alu_comp_test
+  1032	23:30	gvim ../../Gokulnath/dual_ram_uvm/tb/scoreboard.sv
+  1033	23:30	gvim ../../Gokulnath/ALU/demoo/tb/scoreboard.sv
+  1036	23:35	gvim alu_log_test.log
+  1059	0:07	vsim -vopt work.top -voptargs=+acc=npr -l alu_log_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" +UVM_TESTNAME=alu_log_test
+  1066	11:57	givm ../../XGE_MAC_PROJECT/tb/xge_mac_scoreboard.sv
+  1067	11:57	gvim ../../XGE_MAC_PROJECT/tb/xge_mac_scoreboard.sv
+  1068	11:58	gvim ../../Gokulnath/ALU/demoo/tb/tr_db.log
+  1069	11:58	gvim ../../Gokulnath/ALU/demoo/tb/alu.log
+  1073	12:04	givm ../../XGE_MAC_PROJECT/sim/transcript_vcs.log
+  1074	12:04	gvim ../../XGE_MAC_PROJECT/sim/transcript_vcs.log
+  1078	12:15	gvim alu_add_test.log
+  1083	12:40	gvim ../../johnshahid_B7/ALU_shahid/scoreboard.sv
+  1084	12:41	gvim ../../johnshahid_B7/ALU_shahid/alu_active_monitor.sv
+  1085	12:42	gvim ../../johnshahid_B7/ALU_shahid/ ../.
+  1086	12:42	cp -rd ../../johnshahid_B7/ALU_shahid/ ../.
+  1087	12:42	cp -rf ../../johnshahid_B7/ALU_shahid/ ../.
+  1089	12:43	cd ../ALU_shahid/
+  1090	12:43	ls
+  1091	12:43	gvim seq_item.sv
+  1092	12:46	gvim ../../johnshahid_B7/AXI_FIFO_BFM/src/hvl_top/master/axi4_master_monitor_proxy.sv
+  1093	12:52	gvim ../Dual_port_mem/sb.sv
+  1094	12:53	gvim ../Dual_port_mem/active_mon.sv
+  1111	13:17	cd ../ALU_Nitish/
+  1124	13:29	vsim -vopt top -voptargs=+acc=npr -l alu.log -c -do "add wave -r /*;  run -all;quit;" -wlf waveform.wlf +UVM_TESTNAME=alu_add_test
+  1129	13:33	vsim -vopt work.top -voptargs=+acc=npr -l alu_add_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;"
+  1132	13:35	vsim -vopt top -voptargs=+acc=npr -l alu.log -c -do "add wave -r /*;  run -all;quit;" -wlf waveform.wlf
+  1170	15:01	vsim -vopt work.top -voptargs=+acc=npr -l alu_add_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" +UVM_TESTNAME=alu_add_test
+  1174	15:02	jobs
+  1175	15:02	vsim -vopt top -voptargs=+acc=npr -l alu.log -c -do "add wave -r /*;  run -all;quit;" -wlf waveform.wlf +UVM_TESTNAME=alu_sub_test
+  1178	15:06	vsim -vopt work.top -voptargs=+acc=npr -l alu_sub_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" +UVM_TESTNAME=alu_sub_test
+  1179	15:06	vcover report -html cov.ucdb -details
+  1180	15:06	firefox covhtmlreport/index.html &
+  1181	15:06	vlog -sv +acc -f alu.f
+  1182	15:07	vsim -vopt top -voptargs=+acc=npr -l alu.log -c -do "add wave -r /*;  run -all;quit;" -wlf waveform.wlf +UVM_TESTNAME=alu_inc_dec_test
+  1183	15:07	vsim -vopt top -voptargs=+acc=npr -l alu.log -c -do "add wave -r /*;  run -all;quit;" -wlf waveform.wlf +UVM_TESTNAME=alu_incr_dec_test
+  1184	15:08	vsim -view waveform.wlf &
+  1185	15:42	gvim ../ALU_shahid/design.sv
+  1186	21:48	history - > hist.txt
+  vsim -vopt work.top -voptargs=+acc=npr -l alu_sub_test.log -coverage -c -do "add wave log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" -wlf waveform.wlf +UVM_TESTNAME=alu_sub_test

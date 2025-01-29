@@ -1,0 +1,7 @@
+alu_add_test
+alu_sub_test
+alu_mult_test
+alu_comp_test
+alu_incr_dec_test
+alu_log_test
+alu_wait_test

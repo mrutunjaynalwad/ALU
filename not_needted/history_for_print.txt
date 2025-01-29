@@ -1,0 +1,100 @@
+   292	0:39	gvim ../../Gokulnath/ALU/grap_lock/tb/input_driver.sv
+   293	0:40	gvim ../../Gokulnath/ALU/grap_lock/tb/input_monitor.sv
+   294	9:55	gvim ../../Gokulnath/ALU/grap_lock/tb/scoreboard.sv
+   297	9:58	gvim ../../Gokulnath/ALU/grap_lock/tb/output_monitor.sv
+   301	11:50	gvim ../../johnshahid_B7/ALU_shahid/alu_sequencer.sv
+   302	11:51	gvim ../../johnshahid_B7/ALU_shahid/sequence.sv
+   303	11:52	rm -rf ../ALU/..
+   304	11:52	rm -rf ../ALU/...
+   305	11:53	gvim ../../kashyap_b7/ALU_tb/driver.sv
+   306	11:54	cp -rf ../../johnshahid_B7/ALU_shahid/ ../ALU
+   307	11:54	cd ../ALU/
+   308	11:55	cd ALU_shahid/
+   310	11:55	gvim scoreboard.sv
+   311	11:59	cd -
+   312	12:00	cd ../ALU_Nitish/
+   321	12:37	gvim ../../johnshahid_B7/ALU_shahid/alu_passive_agent.sv
+   322	12:45	gvim ../../johnshahid_B7/ALU_shahid/scoreboard.sv
+   323	12:47	gvim ../../johnshahid_B7/XGE_MAC_PROJECT/tb/xge_mac_scoreboard.sv
+   325	17:16	mkdir pulpino
+   328	17:26	git config
+   329	17:26	git config --global user.name "Nitish1371"
+   330	17:27	git config --global user.email nitishyadav@mirafra.com
+   331	17:27	ssh-keygen -t ed25519 -C "nitishyadav@mirafra.com"
+   332	17:33	gvim ssh-keygen -t ed25519 -C
+   333	17:35	gvim /home/nitishyadav/.ssh/id_ed25519
+   334	17:38	gvim /home/nitishyadav/.ssh/id_ed25519.pub
+   335	17:40	git clone git@github.com:Nitish1371/pulpino.git
+   337	17:41	cd pulpino/
+   338	17:41	git status
+   339	22:58	s
+   347	23:02	cd sw/apps/
+   350	23:05	gvim helloworld/helloworld.c
+   351	23:09	cd ../
+   352	23:09	cd ..
+   354	23:09	cd sw/
+   356	23:09	gvim ../tb/tb.sv
+   358	23:17	gvi cmake_configure.riscv.gcc.sh
+   359	23:17	gvim cmake_configure.riscv.gcc.sh
+   360	23:18	mkdir build
+   361	23:18	cd build/
+   362	23:19	cp -rf ../cmake_configure.riscv.gcc.sh .
+   364	23:19	source cmake_configure.riscv.gcc.sh
+   367	23:19	ll
+   369	23:22	chmod +x cmake_configure.riscv.gcc.sh
+   372	23:23	make helloworld
+   374	23:24	gvim CMakeCache.txt
+   376	23:26	gvim CMakeFiles/
+   379	23:28	cmake vcompile
+   380	23:29	CMake vcompile
+   381	23:29	Cmake vcompile
+   383	23:29	sh cmake_configure.riscv.gcc.sh
+   385	23:30	bash cmake_configure.riscv.gcc.sh
+   388	23:33	gvim CMakeFiles/CMakeOutput.log
+   391	23:35	cp -rf ../apps/ .
+   393	23:35	make vcompile
+   394	23:35	make helloworld.vsim
+   396	23:36	cp -rf ../libs/ .
+   398	23:37	cd ../../
+   399	23:38	grap -r "cmake_install*"
+   400	23:38	grep -r "cmake_install*"
+   401	23:38	grep -lri "cmake_install*"
+   402	23:38	grep -lri "fpu_makefile"
+   403	23:38	grep -lri "fpu*"
+   404	23:39	grep -lri "fpu_*"
+   406	23:39	cd sw/build/
+   408	23:48	gvim ../apps/riscv_tests/basic/basic.c
+   410	23:54	gvim CMakeFiles/CMakeError.log
+   412	0:29	./cmake_configure.riscv.gcc.sh
+   413	14:13	cd ../../../../ALU_Nitish/
+   422	20:16	gvim alu_pkg.sv
+   427	20:25	pwd
+   439	22:51	gvim ../../Gokulnath/ALU/ALU_COV/tb/alu.log
+   440	22:52	gvim ../../Gokulnath/ALU/ALU_COV/tb/output_monitor.sv
+   456	23:23	gim ../XGE_MAC_PROJECT/tb/xge_mac_subscriber.svh
+   457	23:23	gvim ../XGE_MAC_PROJECT/tb/xge_mac_subscriber.svh
+   465	23:32	vlog -sv -f alu.f
+   466	23:32	vsim top -l alu.log -c -do "run -all;quit;"
+   467	23:40	gvim ../XGE_MAC_PROJECT/tb/xge_mac_scoreboard.sv
+   468	23:41	gvim ../XGE_MAC_PROJECT/tb/rx_monitor.sv
+   471	11:39	vsim top -l alu.log +coverage -c -do "run -all;quit;"
+   474	11:46	vlog -sv +acc +cover +fcover -f alu.f
+   476	11:48	vsim -vopt top -voptargs=+acc=npr -l alu.log -coverage -c -do "run -all;quit;"
+   478	11:51	vsim -vopt top -voptargs=+acc=npr -l alu.log -coverage -c -do "coverage save -directive -cvg cov.ucdb; run -all;quit;"
+   486	11:59	rm -rf work covhtmlreport cov.ucdb
+   488	11:59	rm -rf vsim_stacktrace.vstf
+   496	12:03	gvim coverage.sv
+   497	12:03	fg
+   499	12:03	jobs
+   500	12:10	gvim ../../johnshahid_B7/ALU_shahid/driver.sv
+   501	12:10	gvim ../../johnshahid_B7/ALU_shahid/alu_active_monitor.sv
+   502	12:11	gvim ../../johnshahid_B7/ALU_shahid/alu_passive_monitor.sv
+   504	12:12	rm -rf mon1.sv
+   509	12:19	vlog -sv +cover +fcover -f alu.f
+   510	12:20	vsim -vopt top -l alu.log -coverage -c -do "coverage save -directive -cvg cov.ucdb; run -all;quit;"
+   511	12:20	ls
+   512	12:20	vcover report -html cov.ucdb -details
+   513	12:20	firefox covhtmlreport/index.html &
+   514	12:21	gvim alu.f
+   515	12:23	history
+   516	12:27	history > history_for_print.txt

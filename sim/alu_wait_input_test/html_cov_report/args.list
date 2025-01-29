@@ -1,0 +1,5 @@
+-html
+alu_wait_input_test/alu_wait_input_test_coverage.ucdb
+-htmldir
+alu_wait_input_test/html_cov_report
+-details

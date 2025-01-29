@@ -1,0 +1,126 @@
+# vsim -vopt work.top -voptargs="+acc=npr" -assertdebug "+UVM_TESTNAME=alu_incr_dec_test" "+UVM_VERBOSITY=UVM_MEDIUM" -l alu_incr_dec_test_01102024-145544/alu_incr_dec_test.log -sva -coverage -c -do "log -r /*; add wave -r /*; coverage save -onexit -assert -directive -cvg -codeAll alu_incr_dec_test_01102024-145544/alu_incr_dec_test_01102024-145544_coverage.ucdb; run -all; exit" -wlf alu_incr_dec_test_01102024-145544/waveform.wlf 
+# Start time: 14:55:45 on Oct 01,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.intf(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.globals(fast)
+# Loading work.tb_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.alu_interface_sv_unit(fast)
+# Loading work.intf(fast)
+# Loading work.assertions(fast)
+# Loading work.ALU_DESIGN(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-3015) ../top.sv(21): [PCDPC] - Port size (8) does not match connection size (9) for port 'OPA'. The port definition is at: ../design.sv(1).
+#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../design.sv
+# ** Warning: (vsim-3015) ../top.sv(21): [PCDPC] - Port size (8) does not match connection size (9) for port 'OPB'. The port definition is at: ../design.sv(1).
+#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../design.sv
+# ** Warning: (vsim-3015) ../top.sv(21): [PCDPC] - Port size (4) does not match connection size (5) for port 'CMD'. The port definition is at: ../design.sv(1).
+#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../design.sv
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# log -r /*
+#  add wave -r /*
+#  coverage save -onexit -assert -directive -cvg -codeAll alu_incr_dec_test_01102024-145544/alu_incr_dec_test_01102024-145544_coverage.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# Top
+# UVM_INFO ../assertion.sv(27) @ 0: reporter [ALU_Assertions] time=0 ALU Assertions run started 
+# UVM_INFO @ 0: reporter [RNTST] Running test alu_incr_dec_test...
+# UVM_INFO ../alu_inc_dec_test.sv(15) @ 0: uvm_test_top [uvm_test_top] start of run phase
+# UVM_INFO ../driver.sv(27) @ 0: uvm_test_top.env_h.agent_a_h.drv_h [uvm_test_top.env_h.agent_a_h.drv_h] start of drv run phase
+# UVM_INFO ../sequence.sv(86) @ 0: uvm_test_top.env_h.agent_a_h.seqr_h@@inc_dec_op_seq_h [uvm_test_top.env_h.agent_a_h.seqr_h.inc_dec_op_seq_h] start of inc_dec_seq run phase
+# UVM_INFO ../alu_passive_mon.sv(171) @ 5: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 5opa=x,opb=x,res=z, cout=z, cmd=x,mode=x,cin=x, inp_valid=xce=x
+# UVM_INFO ../driver.sv(91) @ 15: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=27,opb=18,cmd=6,mode=1,cin=1,inp_valid=2
+# UVM_INFO ../alu_passive_mon.sv(171) @ 15: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 5opa=x,opb=x,res=z, cout=z, cmd=x,mode=x,cin=x, inp_valid=xce=x
+# UVM_INFO ../driver.sv(91) @ 25: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=26,opb=92,cmd=5,mode=1,cin=1,inp_valid=0
+# UVM_INFO ../alu_passive_mon.sv(92) @ 25: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=27,opb=18,res=z,cout=z,oflow=z,g=z,e=z,l=z,err=z, cmd=6,mode=1, cin=1, inp_valid=2
+# UVM_INFO ../sb.sv(96) @ 25: uvm_test_top.env_h.scoreboard_h [scoreboard] 3opa=27,opb=18,res=19,cmd=6,mode=1, cin=1, inp_valid=2
+# UVM_INFO ../alu_passive_mon.sv(92) @ 35: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=26,opb=92,res=0,cout=0,oflow=z,g=z,e=z,l=z,err=z, cmd=5,mode=1, cin=1, inp_valid=0
+# time=35 output assertion success 
+# 
+# UVM_ERROR ../sb.sv(313) @ 45: uvm_test_top.env_h.scoreboard_h [scoreboard] Fail matched expected_res=19,actual_res=0
+# UVM_INFO ../alu_passive_mon.sv(92) @ 45: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=26,opb=92,res=17,cout=z,oflow=z,g=z,e=z,l=z,err=z, cmd=5,mode=1, cin=1, inp_valid=0
+# UVM_INFO ../driver.sv(91) @ 45: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=135,opb=87,cmd=7,mode=1,cin=0,inp_valid=2
+# UVM_INFO ../driver.sv(91) @ 55: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=201,opb=33,cmd=7,mode=1,cin=1,inp_valid=1
+# UVM_INFO ../alu_passive_mon.sv(92) @ 55: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=135,opb=87,res=0,cout=0,oflow=z,g=z,e=z,l=z,err=z, cmd=7,mode=1, cin=0, inp_valid=2
+# UVM_INFO ../sb.sv(96) @ 55: uvm_test_top.env_h.scoreboard_h [scoreboard] 3opa=135,opb=87,res=86,cmd=7,mode=1, cin=0, inp_valid=2
+# UVM_INFO ../driver.sv(91) @ 65: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=201,opb=196,cmd=6,mode=1,cin=0,inp_valid=0
+# UVM_INFO ../alu_passive_mon.sv(92) @ 65: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=201,opb=33,res=0,cout=0,oflow=z,g=z,e=z,l=z,err=z, cmd=7,mode=1, cin=1, inp_valid=1
+# time=65 output assertion success 
+# 
+# UVM_ERROR ../sb.sv(313) @ 75: uvm_test_top.env_h.scoreboard_h [scoreboard] Fail matched expected_res=86,actual_res=0
+# UVM_INFO ../driver.sv(91) @ 75: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=254,opb=163,cmd=7,mode=1,cin=0,inp_valid=0
+# UVM_INFO ../alu_passive_mon.sv(92) @ 75: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=201,opb=196,res=88,cout=z,oflow=z,g=z,e=z,l=z,err=z, cmd=6,mode=1, cin=0, inp_valid=0
+# time=75 output assertion success 
+# 
+# UVM_INFO ../alu_passive_mon.sv(92) @ 85: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=254,opb=163,res=88,cout=z,oflow=z,g=z,e=z,l=z,err=z, cmd=7,mode=1, cin=0, inp_valid=0
+# UVM_INFO ../alu_passive_mon.sv(92) @ 95: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=254,opb=163,res=0,cout=0,oflow=z,g=z,e=z,l=z,err=z, cmd=7,mode=1, cin=0, inp_valid=0
+# UVM_ERROR ../sb.sv(302) @ 105: uvm_test_top.env_h.scoreboard_h [scoreboard] Fail matched expected_res=0,actual_res=88
+# UVM_INFO ../alu_passive_mon.sv(92) @ 105: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=254,opb=163,res=0,cout=0,oflow=z,g=z,e=z,l=z,err=z, cmd=7,mode=1, cin=0, inp_valid=0
+# UVM_INFO ../alu_passive_mon.sv(92) @ 115: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=254,opb=163,res=0,cout=0,oflow=z,g=z,e=z,l=z,err=z, cmd=7,mode=1, cin=0, inp_valid=0
+# UVM_INFO ../alu_passive_mon.sv(92) @ 125: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=254,opb=163,res=0,cout=0,oflow=z,g=z,e=z,l=z,err=z, cmd=7,mode=1, cin=0, inp_valid=0
+# UVM_INFO ../alu_inc_dec_test.sv(22) @ 135: uvm_test_top [uvm_test_top] end of run phase
+# UVM_ERROR ../sb.sv(313) @ 135: uvm_test_top.env_h.scoreboard_h [scoreboard] Fail matched expected_res=0,actual_res=0
+# UVM_INFO ../alu_passive_mon.sv(92) @ 135: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 3opa=254,opb=163,res=0,cout=0,oflow=z,g=z,e=z,l=z,err=z, cmd=7,mode=1, cin=0, inp_valid=0
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 135: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   31
+# UVM_WARNING :    0
+# UVM_ERROR :    4
+# UVM_FATAL :    0
+# ** Report counts by id
+# [ALU_Assertions]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [alu_driver]     6
+# [alu_monitor]    14
+# [scoreboard]     6
+# [uvm_test_top]     2
+# [uvm_test_top.env_h.agent_a_h.drv_h]     1
+# [uvm_test_top.env_h.agent_a_h.seqr_h.inc_dec_op_seq_h]     1
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 135 ns  Iteration: 54  Instance: /top
+# Saving coverage database on exit...
+# End time: 14:55:47 on Oct 01,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 3

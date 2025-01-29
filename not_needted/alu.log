@@ -1,0 +1,9 @@
+# vsim -vopt top -voptargs="+acc=npr" -l alu.log -c -do "add wave -r /*;  run -all;quit;" -wlf waveform.wlf "+UVM_TESTNAME=alu_wait_input_test" 
+# Start time: 12:15:32 on Sep 30,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: top.sv(19): Module 'intf' is not defined.
+# ** Error: top.sv(21): Module 'ALU_DESIGN' is not defined.
+# Optimization failed
+# Error loading design
+# End time: 12:15:33 on Sep 30,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
