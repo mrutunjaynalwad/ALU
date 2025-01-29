@@ -1,0 +1,10 @@
+var g_db_data = {
+'14':1,
+'12':1,
+'1280':1,
+'947':1,
+'1773':1,
+'5':1,
+'dummyEnd':1
+};
+processScopesDbFile(g_db_data);
