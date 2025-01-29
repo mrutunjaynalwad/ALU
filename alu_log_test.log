@@ -1,0 +1,193 @@
+# vsim -vopt work.top -voptargs="+acc=npr" -l alu_log_test.log -coverage -c -do "log -r /*; coverage save -onexit -directive -cvg -codeAll cov.ucdb; run -all;quit;" "+UVM_TESTNAME=alu_log_test" 
+# Start time: 00:07:22 on Sep 13,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.intf(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.globals(fast)
+# Loading work.tb_pkg(fast)
+# Loading work.top(fast)
+# Loading work.alu_interface_sv_unit(fast)
+# Loading work.intf(fast)
+# Loading work.ALU_DESIGN(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-3015) top.sv(21): [PCDPC] - Port size (8) does not match connection size (9) for port 'OPA'. The port definition is at: design.sv(1).
+#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: design.sv
+# ** Warning: (vsim-3015) top.sv(21): [PCDPC] - Port size (8) does not match connection size (9) for port 'OPB'. The port definition is at: design.sv(1).
+#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: design.sv
+# ** Warning: (vsim-3015) top.sv(21): [PCDPC] - Port size (4) does not match connection size (5) for port 'CMD'. The port definition is at: design.sv(1).
+#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: design.sv
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# log -r /*
+#  coverage save -onexit -directive -cvg -codeAll cov.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# Top
+# UVM_INFO @ 0: reporter [RNTST] Running test alu_log_test...
+# UVM_INFO alu_logical_test.sv(15) @ 0: uvm_test_top [uvm_test_top] start of run phase
+# UVM_INFO driver.sv(25) @ 0: uvm_test_top.env_h.agent_a_h.drv_h [uvm_test_top.env_h.agent_a_h.drv_h] start of drv run phase
+# UVM_INFO sequence.sv(166) @ 0: uvm_test_top.env_h.agent_a_h.seqr_h@@log_op_seq_h [uvm_test_top.env_h.agent_a_h.seqr_h.log_op_seq_h] start of log_seq run phase
+# UVM_INFO alu_passive_mon.sv(169) @ 5: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 5opa=x,opb=x,res=z, cout=z, cmd=x,mode=x,cin=x, inp_valid=xce=x
+# UVM_INFO alu_passive_mon.sv(169) @ 15: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 5opa=x,opb=x,res=z, cout=z, cmd=x,mode=x,cin=x, inp_valid=xce=x
+# UVM_INFO driver.sv(70) @ 25: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=27,opb=21,cmd=0,mode=0,cin=0,inp_valid=3
+# UVM_INFO alu_passive_mon.sv(169) @ 25: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 5opa=x,opb=x,res=z, cout=z, cmd=x,mode=x,cin=x, inp_valid=xce=x
+# UVM_INFO alu_passive_mon.sv(154) @ 35: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=27,opb=21,res=z, cout=z, cmd=0,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 35: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11011,opb=10101,res=10001,cmd=0,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 45: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11011,opb=10101,res=10001,cmd=0,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 45: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=27,opb=21,res=0, cout=z, cmd=0,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 55: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=27,opb=21,res=17, cout=z, cmd=0,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 55: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11011,opb=10101,res=10001,cmd=0,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 55: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=73,opb=239,cmd=1,mode=0,cin=0,inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 65: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1001001,opb=11101111,res=10110110,cmd=1,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 65: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=73,opb=239,res=17, cout=z, cmd=1,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 75: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=73,opb=239,res=17, cout=z, cmd=1,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 75: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1001001,opb=11101111,res=10110110,cmd=1,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 85: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1001001,opb=11101111,res=10110110,cmd=1,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 85: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=73,opb=239,res=182, cout=z, cmd=1,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 85: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=89,opb=93,cmd=2,mode=0,cin=0,inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 95: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=89,opb=93,res=182, cout=z, cmd=2,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 95: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1011001,opb=1011101,res=1,cmd=2,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 105: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1011001,opb=1011101,res=1,cmd=2,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 105: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=89,opb=93,res=182, cout=z, cmd=2,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 115: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=89,opb=93,res=1, cout=z, cmd=2,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 115: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1011001,opb=1011101,res=1,cmd=2,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 115: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=73,opb=243,cmd=3,mode=0,cin=0,inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 125: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1001001,opb=11110011,res=100,cmd=3,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 125: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=73,opb=243,res=1, cout=z, cmd=3,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 135: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=73,opb=243,res=1, cout=z, cmd=3,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 135: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1001001,opb=11110011,res=100,cmd=3,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 145: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1001001,opb=11110011,res=100,cmd=3,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 145: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=73,opb=243,res=4, cout=z, cmd=3,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 145: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=195,opb=91,cmd=4,mode=0,cin=0,inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 155: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=195,opb=91,res=4, cout=z, cmd=4,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 155: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11000011,opb=1011011,res=10011000,cmd=4,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 165: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11000011,opb=1011011,res=10011000,cmd=4,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 165: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=195,opb=91,res=4, cout=z, cmd=4,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 175: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=195,opb=91,res=152, cout=z, cmd=4,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 175: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11000011,opb=1011011,res=10011000,cmd=4,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 175: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=83,opb=202,cmd=5,mode=0,cin=0,inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 185: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010011,opb=11001010,res=1100110,cmd=5,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 185: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=83,opb=202,res=152, cout=z, cmd=5,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 195: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=83,opb=202,res=152, cout=z, cmd=5,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 195: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010011,opb=11001010,res=1100110,cmd=5,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 205: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010011,opb=11001010,res=1100110,cmd=5,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 205: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=83,opb=202,res=102, cout=z, cmd=5,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 205: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=255,opb=34,cmd=6,mode=0,cin=0,inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 215: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=255,opb=34,res=102, cout=z, cmd=6,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 215: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11111111,opb=100010,res=0,cmd=6,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 225: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11111111,opb=100010,res=0,cmd=6,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 225: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=255,opb=34,res=102, cout=z, cmd=6,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 235: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=255,opb=34,res=0, cout=z, cmd=6,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 235: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11111111,opb=100010,res=0,cmd=6,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 235: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=84,opb=67,cmd=7,mode=0,cin=0,inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 245: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010100,opb=1000011,res=0,cmd=7,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 245: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=84,opb=67,res=0, cout=z, cmd=7,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 255: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=84,opb=67,res=0, cout=z, cmd=7,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 255: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010100,opb=1000011,res=0,cmd=7,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 265: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010100,opb=1000011,res=0,cmd=7,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 265: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=84,opb=67,res=188, cout=z, cmd=7,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 265: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=189,opb=77,cmd=8,mode=0,cin=0,inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 275: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=189,opb=77,res=188, cout=z, cmd=8,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 275: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=10111101,opb=1001101,res=0,cmd=8,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 285: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=10111101,opb=1001101,res=0,cmd=8,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 285: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=189,opb=77,res=188, cout=z, cmd=8,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 295: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=189,opb=77,res=94, cout=z, cmd=8,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 295: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=10111101,opb=1001101,res=0,cmd=8,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 295: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=80,opb=188,cmd=9,mode=0,cin=0,inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 305: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010000,opb=10111100,res=0,cmd=9,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 305: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=80,opb=188,res=94, cout=z, cmd=9,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 315: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=80,opb=188,res=94, cout=z, cmd=9,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 315: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010000,opb=10111100,res=0,cmd=9,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 325: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1010000,opb=10111100,res=0,cmd=9,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 325: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=80,opb=188,res=160, cout=z, cmd=9,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 325: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=65,opb=151,cmd=10,mode=0,cin=0,inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 335: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=65,opb=151,res=160, cout=z, cmd=10,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 335: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1000001,opb=10010111,res=0,cmd=10,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 345: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1000001,opb=10010111,res=0,cmd=10,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 345: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=65,opb=151,res=160, cout=z, cmd=10,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 355: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=65,opb=151,res=75, cout=z, cmd=10,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 355: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=1000001,opb=10010111,res=0,cmd=10,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 355: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=139,opb=66,cmd=11,mode=0,cin=0,inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 365: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=10001011,opb=1000010,res=0,cmd=11,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 365: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=139,opb=66,res=75, cout=z, cmd=11,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 375: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=139,opb=66,res=75, cout=z, cmd=11,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 375: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=10001011,opb=1000010,res=0,cmd=11,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 385: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=10001011,opb=1000010,res=0,cmd=11,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 385: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=139,opb=66,res=132, cout=z, cmd=11,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 385: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=3,opb=5,cmd=12,mode=0,cin=0,inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 395: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=3,opb=5,res=132, cout=z, cmd=12,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 395: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11,opb=101,res=110000,cmd=12,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 405: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11,opb=101,res=110000,cmd=12,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 405: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=3,opb=5,res=132, cout=z, cmd=12,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 415: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=3,opb=5,res=96, cout=z, cmd=12,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 415: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=11,opb=101,res=110000,cmd=12,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 415: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=33,opb=128,cmd=13,mode=0,cin=0,inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 425: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=100001,opb=10000000,res=10000000,cmd=13,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 425: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=33,opb=128,res=96, cout=z, cmd=13,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 435: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=33,opb=128,res=96, cout=z, cmd=13,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 435: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=100001,opb=10000000,res=10000000,cmd=13,mode=0, cin=0, inp_valid=3
+# UVM_INFO scoreboard.sv(234) @ 445: uvm_test_top.env_h.scoreboard_h [scoreboard] 11 opa=100001,opb=10000000,res=10000000,cmd=13,mode=0, cin=0, inp_valid=3
+# UVM_INFO alu_passive_mon.sv(154) @ 445: uvm_test_top.env_h.agent_p_h.mon_pass_h [alu_monitor] 4opa=33,opb=128,res=33, cout=z, cmd=13,mode=0, cin=0, inp_valid=3
+# UVM_INFO driver.sv(70) @ 445: uvm_test_top.env_h.agent_a_h.drv_h [alu_driver] opa=29,opb=13,cmd=14,mode=0,cin=0,inp_valid=3
+# UVM_INFO alu_logical_test.sv(23) @ 445: uvm_test_top [uvm_test_top] end of run phase
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 445: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_ERROR scoreboard.sv(305) @ 445: uvm_test_top.env_h.scoreboard_h [scoreboard] Fail matched expected_res=128,actual_res=33
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  110
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [alu_driver]    15
+# [alu_monitor]    45
+# [scoreboard]    43
+# [uvm_test_top]     2
+# [uvm_test_top.env_h.agent_a_h.drv_h]     1
+# [uvm_test_top.env_h.agent_a_h.seqr_h.log_op_seq_h]     1
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 445 ns  Iteration: 61  Instance: /top
+# Saving coverage database on exit...
+# End time: 00:07:23 on Sep 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4

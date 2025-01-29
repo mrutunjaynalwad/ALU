@@ -1,0 +1,26 @@
+var g_data = {
+g1280:[{dummy:0},
+{name:'crgp',f:1,type:1,id:1286,tb:'15',h:'14',m:'1',hp:'93.33%',cov:['96.87%','G'],g:'100.00%',gp:['96.87%','G'],opts:[[],['merge_instance','auto(true)']],parent:'1280'}],
+c1286:{name:'crgp',type:1,pHash:'1280',pPath:'/tb_pkg/alu_cov',totals:[14,13,'92.85%','G',1,1,'100.00%','G'],cvp:[{dummy:0},
+{name:'inp_val',f:1,type:4,id:1287,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1286'},
+{name:'mode',f:1,type:4,id:1288,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1286'},
+{name:'cmd',f:1,type:4,id:1289,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1286'},
+{name:'ce',f:1,type:4,id:1290,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1286'},
+{name:'opa',f:1,type:4,id:1291,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1286'},
+{name:'opb',f:1,type:4,id:1292,tb:'4',h:'3',m:'1',hp:'75.00%',cov:['75.00%','Y'],g:'100.00%',gp:['75.00%','Y'],hasb:1,parent:'1286'},
+{name:'cin',f:1,type:4,id:1293,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1286'}],crx:[{dummy:0},
+{name:'mode_x_cmd',f:1,type:5,id:1294,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1286',cross:['mode','cmd']}]},
+g1773:[{dummy:0},
+{name:'crgp',f:1,type:1,id:1779,tb:'15',h:'14',m:'1',hp:'93.33%',cov:['96.87%','G'],g:'100.00%',gp:['96.87%','G'],opts:[[],['merge_instance','true']],parent:'1773'}],
+c1779:{name:'crgp',type:1,pHash:'1773',pPath:'work.tb_pkg::alu_cov',totals:[14,13,'92.85%','G',1,1,'100.00%','G'],cvp:[{dummy:0},
+{name:'inp_val',f:1,type:4,id:1780,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1779'},
+{name:'mode',f:1,type:4,id:1781,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1779'},
+{name:'cmd',f:1,type:4,id:1782,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1779'},
+{name:'ce',f:1,type:4,id:1783,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1779'},
+{name:'opa',f:1,type:4,id:1784,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1779'},
+{name:'opb',f:1,type:4,id:1785,tb:'4',h:'3',m:'1',hp:'75.00%',cov:['75.00%','Y'],g:'100.00%',gp:['75.00%','Y'],hasb:1,parent:'1779'},
+{name:'cin',f:1,type:4,id:1786,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1779'}],crx:[{dummy:0},
+{name:'mode_x_cmd',f:1,type:5,id:1787,tb:'1',h:'1',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1779',cross:['mode','cmd']}]},
+dummyEnd:0
+};
+processCovergroupsData(g_data);
